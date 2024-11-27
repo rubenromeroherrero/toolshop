@@ -1,6 +1,6 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
-//Classes imported
+//Classes to import
 import { CommonPage } from "../pages/commonPage";
 
 //Instance classes
