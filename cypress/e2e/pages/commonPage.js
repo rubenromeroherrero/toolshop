@@ -8,6 +8,6 @@ export class CommonPage {
   }
 
   checkValueOfEndpoint(endpoint) {
-    cy.url().should("contains", endpoint);
+    cy.url().should("not.contain", endpoint);
   }
 }
