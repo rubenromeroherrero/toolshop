@@ -3,11 +3,7 @@ export class CommonPage {
     cy.visit(url);
   }
 
-  checkEndpointOfUrl(url) {
-    cy.url().should("eq", url);
-  }
-
-  checkValueOfEndpoint(endpoint) {
-    cy.url().should("not.contain", endpoint);
+  checkValueOfEndpoint(inspectProperty, endpoint) {
+    cy.url().should(inspectProperty, endpoint);
   }
 }

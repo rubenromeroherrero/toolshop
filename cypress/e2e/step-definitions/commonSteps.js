@@ -11,15 +11,8 @@ Given("the user visits {string}", (url) => {
 });
 
 Then(
-  "the user checks that the url contains de the endpoint {string}",
-  (url) => {
-    commonPage.checkEndpointOfUrl(url);
-  }
-);
-
-Then(
-  "the user check that the url not contain the endpoint {string}",
-  (endpoint) => {
-    commonPage.checkValueOfEndpoint(endpoint);
+  "the user checks that the url {string} the endpoint {string}",
+  (inspectProperty, endpoint) => {
+    commonPage.checkValueOfEndpoint(inspectProperty, endpoint);
   }
 );
