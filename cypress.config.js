@@ -9,7 +9,7 @@ const { defineConfig } = require("cypress");
 module.exports = defineConfig({
   e2e: {
     chromeWebSecurity: false,
-    specPattern: ["**/*.feature"],
+    specPattern: ["**/*.feature", "**/features/*.js"],
     async setupNodeEvents(on, config) {
       await addCucumberPreprocessorPlugin(on, config);
       on(
